@@ -9,8 +9,8 @@ interface SocialIconsProps {
 
 export const SocialIcons = ({ className, iconSize = 20 }: SocialIconsProps) => {
   const socialLinks = [
-    { name: 'GitHub', url: 'https://github.com/SubhasmitaSw', Icon: Github },
-    { name: 'Twitter', url: 'https://x.com/iam_subhasmita', Icon: Twitter },
+    { name: 'GitHub', url: 'https://github.com/whtssub', Icon: Github },
+    { name: 'Twitter', url: 'https://x.com/whtssub', Icon: Twitter },
     { name: 'LinkedIn', url: 'https://linkedin.com/in/subhasmita-swain', Icon: Linkedin },
     { name: 'Instagram', url: 'https://www.threads.net/@whtssub', Icon: Instagram },
     { name: 'Email', url: 'mailto:subhasmitaofc@gmail.com', Icon: Mail },

@@ -55,7 +55,7 @@
     "gray-matter": "^4.0.3",
     "image-optim": "^3.0.0",
     "imagemin": "^9.0.1",
-    "imagemin-cli": "^3.0.0",
+    "imagemin-cli": "^8.0.0",
     "input-otp": "^1.2.4",
     "lucide-react": "^0.462.0",
     "next": "^15.2.2",

@@ -21,7 +21,7 @@ export default defineConfig({
     port: 8080,
     proxy: {
       "/assets": {
-        target: "https://subhasmitasw.github.io",
+        target: "https://whtssub.github.io",
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/assets/, ""),
       },
