@@ -1,5 +1,10 @@
 [
   {
+    "title": "5 Machine Learning Concepts That Will Change How You See Data",
+    "link": "https://medium.com/@SubhasmitaSw/5-machine-learning-concepts-that-will-change-how-you-see-data-cea0b78b0a88",
+    "description": "Machine learning often receives a reputation for being a black box, a complex and impenetrable system where data is input and answers are output, with little understanding of the process in between. "
+  },
+  {
     "title": "Optimizing Camel-K Integration Build Time",
     "link": "https://camel.apache.org/blog/2022/06/Optimizing-Camel-K-Integration-Build-Time/",
     "description": "Scaling the Camel K operator vertically to improve the integration build time."
