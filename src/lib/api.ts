@@ -17,7 +17,7 @@ export const fetchArticles = async (username: string): Promise<Article[]> => {
               publications(first: 1) {
                 edges {
                   node {
-                    posts(first: 10) {
+                    posts(first: 20) {
                       edges {
                         node {
                           id
@@ -45,22 +45,56 @@ export const fetchArticles = async (username: string): Promise<Article[]> => {
     }
 
     const data = await response.json();
-    console.log('API response data:', data);
+    console.log('API response data:', JSON.stringify(data, null, 2));
+    
+    // Check for GraphQL errors
+    if (data.errors) {
+      console.error('GraphQL errors:', data.errors);
+    }
+    
+    // Check if user exists
+    if (!data.data?.user) {
+      console.warn('User not found in API response');
+      return [];
+    }
+    
+    // Check if publications exist
+    if (!data.data?.user?.publications?.edges || data.data.user.publications.edges.length === 0) {
+      console.warn('No publications found for user');
+      return [];
+    }
     
     if (data.data?.user?.publications?.edges?.[0]?.node?.posts?.edges) {
       // Map the Hashnode posts to our Article interface format
-      return data.data.user.publications.edges[0].node.posts.edges.map((edge: any) => {
-        const post = edge.node;
-        return {
-          id: post.id,
-          title: post.title,
-          brief: post.brief || '',
-          slug: post.slug,
-          dateAdded: post.publishedAt,
-          coverImage: post.coverImage?.url || ''
-        };
+      // Filter out drafts (posts without publishedAt) and only include published posts
+      const articles = data.data.user.publications.edges[0].node.posts.edges
+        .map((edge: any) => {
+          const post = edge.node;
+          return {
+            id: post.id,
+            title: post.title,
+            brief: post.brief || '',
+            slug: post.slug,
+            dateAdded: post.publishedAt,
+            coverImage: post.coverImage?.url || ''
+          };
+        })
+        .filter((article: Article) => {
+          // Only include articles that have a publishedAt date (published articles)
+          return article.dateAdded != null && article.dateAdded !== '';
+        });
+      
+      console.log('Filtered articles (published only):', articles);
+      
+      // Sort articles by date (most recent first)
+      return articles.sort((a: Article, b: Article) => {
+        const dateA = new Date(a.dateAdded).getTime();
+        const dateB = new Date(b.dateAdded).getTime();
+        return dateB - dateA;
       });
     }
+    
+    console.warn('No articles found in API response');
     
     return [];
   } catch (error) {
