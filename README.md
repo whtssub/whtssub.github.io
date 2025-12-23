@@ -1,24 +1,17 @@
-# Subhasmita Swain's Personal Website
+# Subhasmita's Personal Website
 
-A minimal and sustainable personal website built with Jekyll, similar to [lucylai96.github.io](https://github.com/lucylai96/lucylai96.github.io).
+![homepage](/assets/blog/home.png)
 
-## Features
-
-- Minimal, clean design
-- Responsive layout
-- Hindi language support (Devanagari script) alongside English
-- Easy to maintain and update
-
-## Setup
+## Local Setup
 
 1. Install Jekyll and dependencies:
    ```bash
-   bundle install
+   bundle install --path vendor/bundle
    ```
 
 2. Run the development server:
    ```bash
-   bundle exec jekyll serve
+   bundle exec jekyll serve --host 0.0.0.0 --port 4000
    ```
 
 3. Visit `http://localhost:4000` in your browser
