@@ -1,0 +1,27 @@
+title: Subhasmita Swain
+logo: '/files/headshot.png'
+description: I'm a π-learner
+markdown: kramdown
+baseurl: ""
+url: "https://subhasmita.in"
+
+plugins:
+  - jekyll-seo-tag
+
+collections:
+  blog:
+    output: true
+    permalink: /blog/:name/
+
+defaults:
+  - scope:
+      path: "_blog"
+      type: "blog"
+    values:
+      layout: "blog"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+

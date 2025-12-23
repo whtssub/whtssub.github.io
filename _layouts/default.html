@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+{% seo %}
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" }}">
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+
+        {% if site.logo %}
+          <div class="profile-image-wrapper">
+            <img src="{{site.logo | relative_url}}" alt="Logo" class="profile-image" />
+          </div>
+        {% endif %}
+        <h1><a href="{{ "/" | absolute_url }}">{{ site.title }}</a></h1>
+        <p style="color: #64748b; margin: 12px 0;">{{ site.description }}</p>
+        
+        <p style="margin: 16px 0; line-height: 1.8;">
+          <a href="https://github.com/whtssub" target="_blank">GitHub</a> | 
+          <a href="https://www.linkedin.com/in/subhasmita-swain/" target="_blank">LinkedIn</a> | 
+          <a href="https://medium.com/@SubhasmitaSw" target="_blank">Medium</a> | 
+          <a href="https://x.com/whtssub" target="_blank">X</a> |
+          <a href="mailto:subhasmitaofc@gmail.com" target="_blank">Email</a>
+        </p>
+        
+       <p style="margin: 20px 0; padding-top: 20px; border-top: 1px solid rgba(8, 145, 178, 0.1);">
+          <a href="{{ "/blog" | relative_url }}">blog</a> | 
+          <a href="{{ "/talks" | relative_url }}">talks</a> |
+          <a href="{{ "/projects" | relative_url }}">projects</a>
+        </p>
+      </header>
+      <section>
+
+      {{ content }}
+
+      </section>
+       <footer>
+         <p style="font-size: 9px; color: #94a3b8; margin-top: 8px; opacity: 0.7;">
+           Website structure inspired by Lucy Lai's website
+         </p>
+       </footer>
+    </div>
+    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+  </body>
+</html>
+
