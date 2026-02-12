@@ -22,8 +22,10 @@ I actively maintain and co-organize a local [AI community](https://www.linkedin.
 ***
 
 ### recently
-* **Dec 2025:** [Timbernetes v1.35](https://kubernetes.io/blog/2025/12/17/kubernetes-v1-35-release/) has been released! 🚀
-* **Nov 2025:** Took a sabbatical, went on a bagpacking to south-east asia (all work no play makes sue burnout)
-* **Oct 2025:** Spoke on cost-efficient autoscaling with KEDA at [KCD SriLanka 2025](https://community.cncf.io/events/details/cncf-kcd-sri-lanka-presents-kcd-sri-lanka-2025/)
+* **Jan 2026:** Wrote [Making Sense of the Transformer](/blog/making-sense-of-the-transformer/) (tracing every tensor in the attention-based architecture)
+* **Dec 2025:** [Kubernetes v1.35](https://kubernetes.io/blog/2025/12/17/kubernetes-v1-35-release/) has been released! 🚀
+* **Dec 2025:** [5 ML concepts that change how you see data](https://medium.com/@SubhasmitaSw/5-machine-learning-concepts-that-will-change-how-you-see-data-cea0b78b0a88) on Medium
+* **Nov 2025:** Took a sabbatical, went on a backpacking trip to south-east asia (all work no play makes sue burnout)
+* **Oct 2025:** Spoke on cost-efficient autoscaling with KEDA at [KCD Sri Lanka 2025](https://community.cncf.io/events/details/cncf-kcd-sri-lanka-presents-kcd-sri-lanka-2025/)
 * **Sep 2025:** Spoke about applied LLMs and RelaxAI at [API Conf Pune](https://www.theapiconf.com/)
 
