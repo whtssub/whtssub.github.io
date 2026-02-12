@@ -2,6 +2,8 @@ title: Subhasmita Swain
 logo: '/files/headshot.png'
 description: I'm a π-learner
 markdown: kramdown
+kramdown:
+  math_engine: mathjax
 baseurl: ""
 url: "https://subhasmita.in"
 

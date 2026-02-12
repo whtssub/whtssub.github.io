@@ -18,7 +18,9 @@ Each blog post must start with front matter (YAML) like this:
 layout: default
 title: "Your Blog Post Title"
 date: 2024-01-15
-categories: cloud-native, kubernetes
+categories:
+  - cloud-native
+  - kubernetes
 excerpt: "A brief description of your blog post"
 image: "/path/to/preview-image.jpg"
 hidden: false

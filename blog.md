@@ -1,6 +1,6 @@
 ---
 layout: default
-maintenance: true
+maintenance: false
 ---
 ## recent articles
 ***
@@ -15,7 +15,7 @@ maintenance: true
   {% assign visible_posts = sorted_posts | where_exp: "post", "post.hidden != true" %}
   {% for post in visible_posts %}
   <div class="blog-card">
-    <a href="{{ post.url }}" class="blog-card-link">
+    <a href="{% if post.external_url %}{{ post.external_url }}{% else %}{{ post.url }}{% endif %}" class="blog-card-link" {% if post.external_url %}target="_blank" rel="noopener noreferrer"{% endif %}>
       <div class="blog-card-content">
         <div class="blog-card-text">
           <h3 class="blog-card-title">{{ post.title }}</h3>

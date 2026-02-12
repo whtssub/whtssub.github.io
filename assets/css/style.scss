@@ -3,3 +3,27 @@
 
 @import "jekyll-theme-minimal";
 
+/* Blog post figures: visible captions and references */
+.blog-figure {
+  margin: 1.5em 0;
+  text-align: center;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  figcaption {
+    margin-top: 0.5em;
+    font-size: 0.9em;
+    color: #64748b;
+    line-height: 1.4;
+
+    a {
+      color: #0891b2;
+    }
+  }
+}
+

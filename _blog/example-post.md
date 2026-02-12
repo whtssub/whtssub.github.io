@@ -2,9 +2,12 @@
 layout: default
 title: "Sample Post"
 date: 2024-01-15
-categories: cloud-native, kubernetes
+categories:
+  - cloud-native
+  - kubernetes
 excerpt: "A beginner's guide to Kubernetes fundamentals and container orchestration."
 image: "/assets/blog/img.png"
+hidden: true
 ---
 
 ## Getting Started with Kubernetes
