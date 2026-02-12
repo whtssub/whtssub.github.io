@@ -1,6 +1,6 @@
 ---
 layout: default
-maintenance: true
+maintenance: false
 ---
 ## talks & presentations
 
@@ -11,6 +11,15 @@ maintenance: true
 {% else %}
 
 Sharing knowledge about cloud computing, serverless technologies, and technical writing.
+
+### Scaling Smarter, Spending Less: Cloud Cost Optimization with KEDA
+
+*[Kubernetes Community Days (KCD) Sri Lanks 2025](https://community.cncf.io/events/details/cncf-kcd-sri-lanka-presents-kcd-sri-lanka-2025/)*
+
+How KEDA helps teams scale smart and spend less because paying for idle pods is sooo 2023. 
+Biggest takeaway? Event-driven autoscaling = happy clusters + happier finance teams.
+
+[View Slides](https://docs.google.com/presentation/d/1_YTwVJODGbuVPYXJv_LfomfKJs99BvyLXi9RvbrF77k/edit?usp=sharing)
 
 ### A Day in the Life of Kubernetes Release with Tools, Challenges, and Operations
 
