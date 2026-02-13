@@ -151,7 +151,8 @@ pre {
 }
 
 table {
-  max-width: 800px;
+  max-width: min(800px, 100%);
+  width: 100%;
   border-collapse: collapse;
   margin: 20px 0;
   background: white;
@@ -335,8 +336,8 @@ footer {
   }
 
   header {
-    padding-right: 320px;
-    padding-bottom: 100px;
+    padding-right: 0;
+    padding-bottom: 24px;
   }
 
   section {
