@@ -22,6 +22,7 @@ I actively maintain and co-organize a local [AI community](https://www.linkedin.
 ***
 
 ### recently
+* **Mar 2026:** Spoke about at [KubeCon + CloudNativeCon Amsterdam 2026](https://sched.co/2EF5h) on how Kubernetes features progress from KEP to GA, and the enhancements subteam’s role in keeping that non-linear release process on track.
 * **Jan 2026:** Wrote [Making Sense of the Transformer](/blog/making-sense-of-the-transformer/) (tracing every tensor in the attention-based architecture)
 * **Dec 2025:** [Kubernetes v1.35](https://kubernetes.io/blog/2025/12/17/kubernetes-v1-35-release/) has been released! 🚀
 * **Dec 2025:** [5 ML concepts that change how you see data](https://medium.com/@SubhasmitaSw/5-machine-learning-concepts-that-will-change-how-you-see-data-cea0b78b0a88) on Medium
