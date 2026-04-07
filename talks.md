@@ -12,9 +12,15 @@ maintenance: false
 
 Sharing knowledge about cloud computing, serverless technologies, and technical writing.
 
+### The KEP Lifecycle: How the Release Team Guides Enhancements To Stability
+
+*[KubeCon + CloudNativeCon Europe 2026](https://sched.co/2EF5h)*
+
+Covers how Kubernetes features move from KEP to GA, and how the enhancements subteam enforces stage gates, handles exceptions, and coordinates the non-linear release process.
+
 ### Scaling Smarter, Spending Less: Cloud Cost Optimization with KEDA
 
-*[Kubernetes Community Days (KCD) Sri Lanks 2025](https://community.cncf.io/events/details/cncf-kcd-sri-lanka-presents-kcd-sri-lanka-2025/)*
+*[Kubernetes Community Days (KCD) Sri Lanka 2025](https://community.cncf.io/events/details/cncf-kcd-sri-lanka-presents-kcd-sri-lanka-2025/)*
 
 How KEDA helps teams scale smart and spend less because paying for idle pods is sooo 2023. 
 Biggest takeaway? Event-driven autoscaling = happy clusters + happier finance teams.
